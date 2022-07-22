@@ -2,16 +2,13 @@
   "name": "simple8js",
   "version": "0.0.1",
   "description": "Node implementation of the simple8b compression algorithm",
-  "main": "index.ts",
-  "scripts": {
-    "test": "jest"
-  },
   "keywords": [
     "compression",
     "decompression",
     "timeseries"
   ],
-  "author": "david_knotten@hotmail.no",
+  "author": "David Rise Knotten <david_knotten@hotmail.no>",
+  "repository": "davrikn/simple8js",
   "license": "MIT",
   "dependencies": {
     "ts-node": "^10.9.1",
@@ -22,5 +19,8 @@
     "@types/jest": "^28.1.6",
     "jest": "^28.1.3",
     "ts-jest": "^28.0.7"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
