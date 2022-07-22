@@ -1,5 +1,5 @@
 {
-  "name": "Simple8js",
+  "name": "simple8js",
   "version": "0.0.1",
   "description": "Node implementation of the simple8b compression algorithm",
   "main": "index.ts",

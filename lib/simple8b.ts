@@ -30,7 +30,6 @@ export default class Simple8B {
         selector++;
       }
 
-      console.log(selector)
       switch (selector) {
         case 0:
           this.encode0(outI, output);
