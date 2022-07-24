@@ -1,4 +1,4 @@
-import Simple8B from "../lib/simple8b"
+import Simple8B from "../src/simple8b"
 import { faker } from '@faker-js/faker';
 
 const generateValues = (n: number, bits: number): bigint[] => {
