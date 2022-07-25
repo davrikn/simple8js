@@ -131,3 +131,14 @@ it("Should decompress to the given values", () => {
     expect(t15dc[i]).toBe(t15[i])
   }
 })
+
+it("Should not allow negative values", () => {
+  const negative: bigint = 0n - faker.datatype.bigInt()
+  expect(() => Simple8B.compress([negative])).toThrowError()
+})
+
+it("Should not allow values greater than 2^60-1", () => {
+  const big: bigint = 2n**60n
+  expect(() => Simple8B.compress([big])).toThrowError()
+
+})

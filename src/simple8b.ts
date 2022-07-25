@@ -174,15 +174,17 @@ export default class Simple8B {
           outI++
           break;
         default:
-          throw new Error("An invalid selector was given")
+          throw new Error("An invalid selector was given: " + selector)
       }
     }
     return out
   }
 
   private static bits(input: bigint): number {
-    if (input.toString(2) == '0') return 0;
-    return input.toString(2).length;
+    const asString = input.toString(2)
+    if (asString == '0') return 0;
+    if (asString.charAt(0) === '-') return 64
+    return asString.length;
   }
 
   public static readSelector(long: bigint): number {
